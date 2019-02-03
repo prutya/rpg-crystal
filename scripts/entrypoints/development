@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Installing dependencies..."
+shards install
+
+command="docker exec -it \$(docker ps -f \"label=prutya.rpg-crystal.app=rpg\" -q) sh"
+echo "Attach to this container: '${command}'"
+tail -f /dev/null

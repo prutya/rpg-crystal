@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  rpg:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    entrypoint: ./scripts/entrypoints/development
+    volumes:
+      - .:/usr/src/app
+      - lib:/usr/src/app/lib
+    labels:
+      prutya.rpg-crystal.app: rpg
+
+volumes:
+  lib:

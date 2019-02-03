@@ -1,0 +1,5 @@
+# Build image
+FROM crystallang/crystal:0.27.1 as build
+
+# Set the working dir
+WORKDIR /usr/src/app
