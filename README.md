@@ -1,3 +1,6 @@
+# The most awesome rpg in Crystal
+Just playing around with [Crystal](https://crystal-lang.org/)
+
 ## Prerequisites
 1. [Docker](https://www.docker.com/)
 1. [docker-compose](https://docs.docker.com/compose/)
