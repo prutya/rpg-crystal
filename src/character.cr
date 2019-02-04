@@ -1,4 +1,6 @@
 class Character
+  property name
+
   def initialize(@name : String)
     @abilities = {} of Symbol => Ability
   end
