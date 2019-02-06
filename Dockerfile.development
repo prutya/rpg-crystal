@@ -1,5 +1,5 @@
 # Build image
-FROM crystallang/crystal:0.27.1 as build
+FROM crystallang/crystal:0.27.1
 
 # Install zsh
 RUN apt-get update && \

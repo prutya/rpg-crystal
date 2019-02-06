@@ -15,6 +15,12 @@ docker-compose -f docker-compose.development.yml up --build
 docker exec -it $(docker ps -f "label=prutya.rpg-crystal.app=rpg" -q) zsh
 ```
 
+## Testing
+### Run linters and specs
+```sh
+scripts/test
+```
+
 ## Production build
 ### Build
 ```sh

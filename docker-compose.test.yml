@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  rpg_test:
+    image: crystallang/crystal:0.27.1
+    entrypoint: ./scripts/entrypoints/test
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - lib:/usr/src/app/lib
+      - bin:/usr/src/app/bin
+    labels:
+      prutya.rpg-crystal.app: rpg_test
+    networks:
+      - rpg_test
+
+volumes:
+  lib:
+  bin:
+
+networks:
+  rpg_test:

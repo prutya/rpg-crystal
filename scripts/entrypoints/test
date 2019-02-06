@@ -1,0 +1,6 @@
+#!/bin/sh
+
+scripts/entrypoints/common
+
+echo "Running linters..."
+scripts/lint

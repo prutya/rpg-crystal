@@ -9,8 +9,15 @@ services:
     volumes:
       - .:/usr/src/app
       - lib:/usr/src/app/lib
+      - bin:/usr/src/app/bin
     labels:
       prutya.rpg-crystal.app: rpg
+    networks:
+      - rpg
 
 volumes:
   lib:
+  bin:
+
+networks:
+  rpg:
