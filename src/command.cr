@@ -1,6 +1,5 @@
-class Command
-  def exec
-  end
+abstract class Command
+  abstract def exec
 end
 
 class DealDamageCommand < Command

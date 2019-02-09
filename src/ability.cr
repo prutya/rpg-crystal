@@ -1,5 +1,4 @@
-class Ability
-end
+abstract class Ability; end
 
 class HealthAbility < Ability
   property max_health : Int32
