@@ -10,8 +10,6 @@ class Character
   end
 
   def get_ability(key : Symbol)
-    # TODO: Handle KeyError
-
     @abilities[key]
   end
 end

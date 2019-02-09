@@ -4,4 +4,8 @@
 /bin/
 /.editorconfig
 /.gitignore
+/docker-compose.development.yml
+/docker-compose.test.yml
 /Dockerfile
+/Dockerfile.development
+/README.md

@@ -2,5 +2,5 @@
 
 scripts/entrypoints/common
 
-echo "Container is up."
+echo "Container is up"
 tail -f /dev/null
