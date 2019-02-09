@@ -18,7 +18,7 @@ docker exec -it $(docker ps -f "label=prutya.rpg-crystal.app=rpg" -q) zsh
 ## Testing
 ### Run linters and specs
 ```sh
-scripts/test
+scripts/test.local
 ```
 
 ## Production build
