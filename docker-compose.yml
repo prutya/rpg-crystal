@@ -1,0 +1,28 @@
+version: "3.7"
+
+x-crystal-defaults: &crystal-defaults
+  build:
+    context: .
+    dockerfile: Dockerfile.development
+  volumes:
+    - .:/usr/src/app
+    - lib:/usr/src/app/lib
+    - bin:/usr/src/app/bin
+  entrypoint: ./docker-entrypoint.sh
+
+volumes:
+  bin: {}
+  lib: {}
+
+services:
+  app:
+    <<: *crystal-defaults
+    command: tail -f /dev/null
+    labels:
+      prutya.rpg-crystal.service: app
+
+  app-test:
+    <<: *crystal-defaults
+    command: crystal spec
+    labels:
+      prutya.rpg-crystal.service: app-test

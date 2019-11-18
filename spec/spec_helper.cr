@@ -1,3 +1,3 @@
 require "spec"
 
-require "../src/rpg"
+require "../src/app"

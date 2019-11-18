@@ -1,10 +1,15 @@
-# Build image
-FROM crystallang/crystal:0.27.1
+FROM alpine:3.10.0
 
-# Install zsh
-RUN apt-get update && \
-  apt-get install -y \
-    zsh
+RUN apk add --update --no-cache \
+  crystal=0.29.0-r0 \
+  shards=0.9.0-r0 \
+  alpine-sdk=1.0-r0 \
+  yaml-dev=0.2.2-r1 \
+  zlib-dev=1.2.11-r1 \
+  libressl-dev=2.7.5-r0 \
+  libressl2.7-libcrypto=2.7.5-r0 \
+  libevent-static=2.1.10-r0
 
-# Set the working dir
 WORKDIR /usr/src/app
+
+RUN apk add --update --no-cache zsh

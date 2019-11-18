@@ -1,6 +1,0 @@
-#!/bin/sh
-
-scripts/entrypoints/common
-
-echo "Container is up"
-tail -f /dev/null

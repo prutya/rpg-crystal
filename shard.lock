@@ -1,10 +1,6 @@
 version: 1.0
 shards:
   ameba:
-    github: veelenga/ameba
-    version: 0.9.0
-
-  colors:
-    github: spencerking/colors
-    commit: a3e4fed55e32281915d4b3886c83518c9bd2c3ac
+    github: crystal-ameba/ameba
+    version: 0.10.1
 

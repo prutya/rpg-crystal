@@ -1,11 +1,12 @@
 /.git
-/docs/
-/lib/
 /bin/
+/lib/
+/scripts/
+/spec/
+/.dockerignore
 /.editorconfig
 /.gitignore
-/docker-compose.development.yml
-/docker-compose.test.yml
+/docker-compose.yml
 /Dockerfile
 /Dockerfile.development
 /README.md
