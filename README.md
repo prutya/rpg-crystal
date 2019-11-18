@@ -8,17 +8,17 @@ Just playing around with [Crystal](https://crystal-lang.org/)
 ## Development
 ### Start the development environment
 ```sh
-docker-compose -f docker-compose.development.yml up --build
+docker-compose up --build --detach app
 ```
 ### Attach to the environment
 ```sh
-docker exec -it $(docker ps -f "label=prutya.rpg-crystal.app=rpg" -q) zsh
+docker exec --interactive --tty  $(docker ps --quiet --filter "label=prutya.rpg-crystal.service=app") zsh
 ```
 
 ## Testing
 ### Run linters and specs
 ```sh
-scripts/test.local
+scripts/test.sh
 ```
 
 ## Production build
